@@ -3,48 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Weather App</title>
   </head>
   <body>
-<div class="weather-app">
-<header>
-    <form>
-<input type="search" placeholder="Enter a city.." required>
-<input type="submit" value="Search">
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
 
-    </form>
-</header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Monday 13:50, clear sky
+              <br />
+              Humidity: <strong>44%</strong>, Wind: <strong>5.14km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
 
-    </main>
-    <div>
-      <h1>Paris</h1>
-      <p>
-        Monday 13:50, clear sky
-        <br>
-Humidity: 44%, Wind: 5.14km/h
-      </p>
-      </div>
-      <div>☀️12°C</div>
-    <main>
-
-    <footer>
-      This project was coded by
-      <a href="https://github.com/dashboard" target="_blank">Lina Moramaga</a>
-      code hosted on
-      <a href="https://github.com/repos" target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://weatherfo.netlify.app/" target="_blank"
-        >website hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/dashboard" target="_blank">Lina Moramaga</a>
+        code hosted on
+        <a href="https://github.com/repos" target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://weatherfo.netlify.app/" target="_blank"
+          >website hosted on Netlify</a
+        >
+      </footer>
     </div>
   </body>
 </html>
